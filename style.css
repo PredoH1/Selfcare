@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background: #adde874b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5da72070;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 94px;
+}
+
+/*menu do topo*/
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  margin: 69px;
+  padding: 5px;
+}
+
+.menu p {
+  color: #161616;
+  margin-left: 5px;
+  font-family: "Cabin", sans-serif;
+  font-size: 19px;
+}
+
+.menu-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 79px;
+  width: 139.091px;
+  height: 33.778px;
+}
+
+.menu-icons svg {
+  margin: 0px 15px 0px 15px;
+  width: 30.889px;
+  height: 33.031px;
+  cursor: pointer;
+}
+
+.menu-icons button {
+  background: transparent;
+  border: none;
+}
+
+/* final do menu do topo*/
+
+main {
+  font-family: "Lato", sans-serif;
+  border-bottom: 0.6px solid #a5a1a1;
+}
+
+/*banner*/
+
+.banner img {
+  width: 100%;
+}
+/*Final banner*/
+
+/*Infoemaçoes de Produtos*/
+.info-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 34px 69px 34px 69px;
+}
+
+.info-produtos h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.info-produtos p {
+  font-size: 18px;
+  font-weight: 400;
+}
+/*Final da informações de produtos*/
+
+/*Produtos*/
+
+.coluna-produtos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.coluna-produtos figure {
+  position: relative;
+  width: 303px;
+  height: 303px;
+  overflow: hidden;
+}
+
+.coluna-produtos figure::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5ca720;
+  transition: top 0.5s;
+  opacity: 0.7;
+}
+
+.coluna-produtos figure:hover::before {
+  top: 0;
+}
+
+.coluna-produtos p {
+  margin: 23px 0px 11px 0px;
+  color: #161616;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.coluna-produtos button {
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: #5ca720;
+  width: 170px;
+  height: 51px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 55px;
+}
+
+.coluna-produtos button:hover {
+  background-color: #512200bd;
+}
+
+.coluna-produtos span {
+  color: #5ca720;
+}
+/*final dos Produtos*/
+
+/*rodape*/
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+
+.acessibilidade {
+  display: flex;
+  justify-content: space-between;
+  height: 214px;
+  border-bottom: 0.2px #a5a1a1 solid;
+}
+
+.rodape-acessibilidade {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 79px;
+}
+
+.rodape-acessibilidade a {
+  line-height: 34px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #161616;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  margin-right: 68px;
+}
+
+.form input {
+  width: 397px;
+  height: 54px;
+  border-radius: 5px, 0px, 0px, 5px;
+  border: 0.5px #d9d9d9 solid;
+  font-size: 20px;
+  font-weight: 600;
+  color: #a8a4a4;
+}
+
+.form button {
+  background-color: #5ca720;
+  border: none;
+  width: 152px;
+  height: 54px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  margin-top: 42px;
+  cursor: pointer;
+}
+
+.form fieldset {
+  border: none;
+  width: 98px;
+  height: 24px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.contatos-cartoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contatos-cartoes a img {
+  width: 33.5px;
+  height: 33.5px;
+  margin: 0px 2px 0px 2px;
+}
+
+.contatos-cartoes div {
+  margin: 43px 71px 45px 71px;
+}
+
+/*Final rodape*/
+
+@media (max-width: 450px) {
+  /*header*/
+  header {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .menu-icons p {
+    width: 63.3px;
+    height: 21.5px;
+  }
+
+  .menu-icons svg {
+    display: flex;
+    width: 24.39px;
+    height: 23.73px;
+  }
+
+  /*fim da header*/
+
+  /*main*/
+
+  .banner img {
+    width: 100%;
+  }
+
+  .info-produtos {
+    justify-content: space-between;
+    margin: 20px 20px 50px 20px;
+  }
+
+  .info-produtos h2 {
+    width: 83px;
+    height: 16px;
+  }
+
+  .coluna-produtos figure {
+    width: 126px;
+    height: 126px;
+  }
+
+  .coluna-produtos div {
+    width: 35%;
+  }
+
+  .coluna-produtos img {
+    width: 100%;
+    height: 126px;
+  }
+
+  .coluna-produtos button {
+    font-size: 25px;
+    width: 150px;
+    height: 34px;
+    border-radius: 15px;
+  }
+  /*fim da main*/
+
+  .acessibilidade {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .acessibilidade div {
+    width: 100%;
+  }
+
+  .rodape-acessibilidade {
+    width: 90%;
+    margin: 10px 0px 0px 40px;
+  }
+
+  .form {
+    margin-top: 45px;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .form button {
+    width: 80%;
+    margin: 17px 0px 42px 0px;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .contatos-cartoes div {
+    display: flex;
+    margin: 34px 30px 34px 30px;
+  }
+
+  .contatos-cartoes a img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .contatos-cartoes img {
+    width: 90px;
+    height: 28px;
+  }
+}
